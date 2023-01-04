@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Booking Uikit</title>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/css/icons/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/css/icons/favicons/favicon-16x16.png" />
+  <!-- Plugins -->
+  <link rel="stylesheet" href="assets/css/plugins.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<!-- Form Modal -->
+<div class="form-modal">
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Create Account</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Login</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <form action="#">
+                                <div class="modal-fullname-input">
+                                    <label for="">Full Name</label>
+                                    <input placeholder="Enter your full name" type="text" name="" id="">
+                                </div>
+                                <div class="modal-email-input">
+                                    <label for="">Email address</label>
+                                    <input placeholder="Eg namaemail@emailkamu.com" type="email" name="" id="">
+                                </div>
+                                <div class="modal-password-input">
+                                    <label for="">Password</label>
+                                    <input placeholder="**** **** ****" type="password" name="" id="">
+                                </div>
+                                <div class="modal-input-groups text-center">
+                                    <button class="custom-btn mt-4" disabled type="submit">Registration</button>
+                                    <hr>
+                                    <button class="custom-btn"><img src="assets/css/icons/registration/ic_google.svg" alt=""> Sign up with Google</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+                            <form action="#">
+                                <div class="modal-email-input">
+                                    <label for="">Email address</label>
+                                    <input placeholder="Eg namaemail@emailkamu.com" type="email" name="" id="">
+                                </div>
+                                <div class="modal-password-input">
+                                    <label for="">Password</label>
+                                    <input placeholder="**** **** ****" type="password" name="" id="">
+                                </div>
+                                <div class="modal-forgot-pass text-end">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#forgotModal">Forget Password?</button>
+                                </div>
+                                <div class="modal-input-groups text-center">
+                                    <button class="custom-btn mt-3" disabled type="submit">Login</button>
+                                    <hr>
+                                    <button class="custom-btn"><img src="assets/css/icons/registration/ic_google.svg" alt="">Login with Google</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="forgot-pass-modal">
+  <div class="modal fade" id="forgotModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="forgot-pass-title">Forget Password</h3>
+          <p class="forgot-pass-subtitle">Enter your registered email below</p>
+          <div class="forgot-pass-inputs">
+            <label for="">Email address</label>
+            <input placeholder="Eg namaemail@emailkamu.com" type="email" name="" id="">
+          </div>
+          <span class="remember-pass">Remember the password? <a class="text-decoration-none" href="#">Sign in</a></span>
+          <div class="forgot-pass-btn text-center">
+            <button disabled class="custom-btn">Submit</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<main class="sections">
+    <section class="registration">
+        <div class="container">
+            <div class="registration-img">
+                <img src="assets/css/icons/registration/order-succes.svg" alt="">
+            </div>
+            <h1 class="registration-title">Welcome</h1>
+            <p class="registration-subtitle">Before enjoying Foodmedia services Please register first</p>
+            <div class="registration-btn-groups text-center">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                    class="custom-btn custom-green-btn mb-3">Create Account</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#formModal" class="custom-btn custom-regular-btn">Login</button>
+            </div>
+            <h4 class="registration-agree">
+                By logging in or registering, you have agreed to <a class="text-decoration-none" href="#">the Terms and
+                    Conditions</a> and <a class="text-decoration-none" href="#">Privacy Policy.</a>
+            </h4>
+        </div>
+    </section>
+</main>
+  <!-- Plugins JS -->
+  <script src="assets/js/plugins.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
